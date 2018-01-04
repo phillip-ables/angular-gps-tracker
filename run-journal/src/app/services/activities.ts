@@ -1,6 +1,6 @@
 import { IActivity } from './activity.model.ts';
 
-expost const SAVED_ACTIVITIES: IActivity[] = [
+export const SAVED_ACTIVITIES: IActivity[] = [
 	{
 		"id": 1,
 		"name": 'Main Bike Trails',
