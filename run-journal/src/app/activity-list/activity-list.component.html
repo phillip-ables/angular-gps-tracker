@@ -1,8 +1,16 @@
-Total Distance: {{ totalDistance }}
-Total Activities: {{ totalActivities }}
-First Date: {{ firstDate | date: 'longDate' }}
-
-<table>
+<div class="row row-runs">
+	<h2 class="heading">My Runs</h2>
+	<hr />
+	<div class="summary">
+		You've logged
+		<p class="totals">{{ totalDistance }}</p>
+		total miles over 
+		<p class="totals">{{ totalActivites }}</p>
+		runs since 
+		<p class="totals">{{ firstDate | date: 'longDate'}}</p>
+	</div>
+	<hr />
+<table class="table table-hover">
 	<thead>
 		<tr>
 			<th>Name</th>
