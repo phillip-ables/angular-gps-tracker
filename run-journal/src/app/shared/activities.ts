@@ -1,4 +1,4 @@
-import { IActivity } from './activity.model.ts';
+import { IActivity } from './activity.model';
 
 export const SAVED_ACTIVITIES: IActivity[] = [
 	{
