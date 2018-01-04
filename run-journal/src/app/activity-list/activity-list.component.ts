@@ -20,7 +20,7 @@ export class ActivityListComponent implements OnInit {
     this.activities = this._activityService.getActivities();
     this.totalActivities = this._activityService.getTotalActivities(this.activities);
     this.totalDistance = this._activityService.getTotalDistance(this.activities);
-    this.firstDate = this._activities.getFirstDate(this.activities);
+    this.firstDate = this._activityService.getFirstDate(this.activities);
   }
 
 }
