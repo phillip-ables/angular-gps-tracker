@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { MapService } from '../services/map.service';
+import { IActivity } from '../shared/activity.model';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-map',
