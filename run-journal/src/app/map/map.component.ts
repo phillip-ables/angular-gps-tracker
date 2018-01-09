@@ -10,8 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MapComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private _mapService: MapService,
+  			  private _route: ActivatedRoute) { }
+  
   ngOnInit() {
   }
 
