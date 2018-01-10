@@ -21,6 +21,8 @@ export class MapComponent implements OnInit {
   gpx: any;
 
   ngOnInit() {
+  	this.activity = this._mapService.getActivity(
+  		+this._route.snapshot.params['id'])
   }
 
 }
