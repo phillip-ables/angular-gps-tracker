@@ -12,7 +12,14 @@ export class MapComponent implements OnInit {
 
   constructor(private _mapService: MapService,
   			  private _route: ActivatedRoute) { }
-  
+  activity: any;
+  //properties that will map to our properties on our activity
+  activityName: string;
+  activityComments: string;
+  activityDate: Date;
+  activityDistance: number;
+  gpx: any;
+
   ngOnInit() {
   }
 
