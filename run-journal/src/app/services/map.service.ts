@@ -37,7 +37,12 @@ export class MapService {
 
     	var customLayer = L.geoJson(null, {
     		style: myStyle
-    	})
+    	});
+
+    	var gpxLayer = omnivore.gpx(SAVED_ACTIVITIES.slice(0).find(run => run.id == id).gpxData, null, customLayer)
+    	.on('ready', function() {
+    		map.fitBounds(gpxLayer.getBounds());
+    	}).addTo(map);
     }
 
 	constructor() { }
